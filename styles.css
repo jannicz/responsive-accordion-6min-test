@@ -1,0 +1,40 @@
+html body {
+	font-family: "Arial";
+	color: #333;
+}
+.responsive-accordion .tab {
+	font-size: 120%;
+	font-weight: bold;
+	background-color: lightgrey;
+	padding: 20px;
+	margin: 20px 0 0 0;
+}
+.responsive-accordion .tab:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+.responsive-accordion .tab:hover + .group {
+	display: block;
+}
+.responsive-accordion .group {
+	display: none;
+}
+.responsive-accordion .group .heading {
+	font-size: 130%;
+	font-weight: bold;
+	padding: 20px 0 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+	h1 {
+		color: grey;
+	}
+	.responsive-accordion .tab {
+		display: inline-block;
+	}
+	.responsive-accordion .tab:hover + .group {
+		display: block;
+		float: left;
+		width: 100%;
+}
+}
