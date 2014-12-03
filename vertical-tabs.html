@@ -2,27 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Vertical Tabs without JS</title>
+  <title>Vertical Tabs</title>
   <meta name="author" content="Jan Suwart">
   <link rel="stylesheet" href="styles-tabs.css">
 </head>
 
 <body>
-  <h1>Vertical Tabs without JS</h1>
+  <h1>Vertical Tabs</h1>
+	
+	<!-- pseudo column method based on wrapper background-color (right col must always be longer) -->
 	<div class="column-wrapper">
 		<div class="tab-column">
-			<div class="tab">
+			<div class="tab" data-group="1">
 				Option 1
 			</div>
-			<div class="tab">
+			<div class="tab" data-group="2">
 				Option 2
 			</div>
-			<div class="tab">
+			<div class="tab" data-group="3">
 				Option 3
 			</div>
 		</div>
 		<div class="content-column">
-			<div class="group">
+			<div class="group" id="tab1">
 				<div class="heading">
 					Heading 1
 				</div>
@@ -31,24 +33,27 @@
 				</div>
 			</div>
 
-			<div class="group">
+			<div class="group hide" id="tab2">
 				<div class="heading">
 					Heading 2
 				</div>
 				<div>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.....
+					<p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
 				</div>
 			</div>
 
-			<div class="group">
+			<div class="group hide" id="tab3">
 				<div class="heading">
 					Heading 3
 				</div>
 				<div>
-					Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet </p>
 				</div>
 			</div>
 		</div>
 	</div>
+	
+	<script src="vertical-tabs.js"></script>
+	
 </body>
 </html>

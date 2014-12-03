@@ -29,6 +29,9 @@ html body {
 .content-column .group {
 	padding: 20px;
 }
+.content-column .group.hide {
+	display: none;
+}
 .content-column .heading {
 	font-size: 130%;
 	font-weight: bold;
